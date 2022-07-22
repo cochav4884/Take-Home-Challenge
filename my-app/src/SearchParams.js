@@ -12,7 +12,8 @@ const SearchParams = () => {
   const [breeds] = useBreedList(animal);
 
   useEffect(() => {
-    requestPets();
+     requestPets();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   async function requestPets() {
